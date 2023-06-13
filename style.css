@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+
+  display: grid;
+  grid-template-rows: 5fr 1fr 5fr;
+
+  overflow: hidden;
+}
+
+.name {
+  font-size: 6rem;
+  font-family: "Kablammo", cursive;
+  position: relative;
+}
+
+.m {
+  background-color: #114634;
+  color: #99e6ccda;
+  animation: turn-pink 1s 2s forwards, go-right 1.5s ease-in-out forwards;
+}
+
+.p {
+  background-color: #14194d;
+  color: #b3b6e8da;
+  animation: turn-pink 1s 2s forwards, go-left 1.5s ease-in-out forwards;
+}
+
+.name,
+.happy {
+  display: grid;
+  place-items: center;
+}
+
+.happy {
+  background-color: #222;
+  color: #eee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  animation: go-left 0.3s ease-out forwards;
+}
+
+.canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes turn-pink {
+  0% {
+  }
+  100% {
+    background-color: #5c1d34;
+    color: #ed8ab1f1;
+  }
+}
+
+@keyframes go-right {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes go-left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
