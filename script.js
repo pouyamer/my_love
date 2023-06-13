@@ -39,7 +39,7 @@ let bubblesForFirstName = []
 let bubblesForSecondName = []
 
 // how many bubbles
-const segments = 120
+const segments = 80
 
 for (let i = 0; i < segments; i++) {
   bubblesForFirstName.push(
